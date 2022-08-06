@@ -3,19 +3,13 @@ import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt
 import seaborn as sns 
-from sklearn import datasets
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
-from sklearn.decomposition import PCA 
+
 
 st.set_page_config("Dataset Analysis")
 st.sidebar.markdown(""" # **Step 1: Upload File**""")
 dt=st.sidebar.file_uploader(label="",type="CSV")
 st.sidebar.markdown(""" # **Step 2: Select One**""")
-option=st.sidebar.radio(label="",options=["Exploratory Data Analysis","Plotting","Machine Learning"])
+option=st.sidebar.radio(label="",options=["Exploratory Data Analysis","Plotting"])
 
 if option=="Exploratory Data Analysis":
     st.title("Exploratory Data Analysis")
