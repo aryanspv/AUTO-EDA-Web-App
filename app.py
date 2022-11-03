@@ -108,6 +108,7 @@ if option=="Plotting":
 
         if slct_plot=="Correlation Plot":
             fig,ax=plt.subplots()
+            plt.yticks(rotation = 90)
             sns.heatmap(df.corr(),annot=True)
             st.pyplot(fig)
 
